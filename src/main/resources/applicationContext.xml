@@ -12,7 +12,7 @@
 	http://www.springframework.org/schema/aop/spring-aop.xsd">
 	
     <!-- Scan do pacote para processar annotations -->
-    <context:component-scan base-package="br.unisal.api.">
+    <context:component-scan base-package="br.unisal.api">
         <context:include-filter type="annotation" expression="org.aspectj.lang.annotation.Aspect" />
     </context:component-scan>
 	
