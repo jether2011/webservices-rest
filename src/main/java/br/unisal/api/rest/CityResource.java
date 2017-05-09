@@ -55,15 +55,15 @@ public class CityResource {
 	
 	@POST
 	@Path("/teste")
-	public Response teste(City c) {
+	public Response teste() {
 		//City city = new City();
 /*		city.setNome(req.);
 		city.setGeocodigo(req.geocodigo);
 		city.setLatitude(req.latitude);
 		city.setLongitude(req.longitude);*/
-		String nome = c.getNome();
+		//String nome = c.getNome();
 		
-		return Response.ok(nome).build();
+		return Response.ok("Teste Ok").build();
 	}
 	
 	
