@@ -17,6 +17,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.google.gson.JsonArray;
+
 import br.unisal.api.model.City;
 import br.unisal.api.service.CityService;
 import br.unisal.api.util.MessageCodeHTTP;
@@ -51,21 +53,7 @@ public class CityResource {
 		}
 
 		return Response.ok(MessageCodeHTTP.CRIADO_RSP).build();
-	}
-	
-	@POST
-	@Path("/teste")
-	public Response teste() {
-		//City city = new City();
-/*		city.setNome(req.);
-		city.setGeocodigo(req.geocodigo);
-		city.setLatitude(req.latitude);
-		city.setLongitude(req.longitude);*/
-		//String nome = c.getNome();
-		
-		return Response.ok("Teste Ok").build();
-	}
-	
+	}	
 	
 
 }
