@@ -12,14 +12,14 @@
 	http://www.springframework.org/schema/aop/spring-aop.xsd">
 	
     <!-- Scan do pacote para processar annotations -->
-    <context:component-scan base-package="br.unisal.api.">
+    <context:component-scan base-package="br.unisal.api">
         <context:include-filter type="annotation" expression="org.aspectj.lang.annotation.Aspect" />
     </context:component-scan>
 	
     <!-- conexao.properties -->
     <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
         <property name="location" value="classpath:conexao_homologacao.properties" />
-<!--         <property name="location" value="classpath:conexao_local.properties" /> -->
+        <!-- <property name="location" value="classpath:conexao_local.properties" /> -->
     </bean>
     <!-- SessionFactory do Hibernate -->
     <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">

@@ -4,6 +4,7 @@
 	<groupId>br.unisal.rest</groupId>
 	<artifactId>rest</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+    <packaging>war</packaging>
 
 	<properties>
 		<spring.version>4.1.6.RELEASE</spring.version>
@@ -201,6 +202,28 @@
 					<encoding>UTF-8</encoding>
 				</configuration>
 			</plugin>
+			<!-- JETTY RUNNER HEROKU -->
+			 <plugin>
+		      <groupId>org.apache.maven.plugins</groupId>
+		      <artifactId>maven-dependency-plugin</artifactId>
+		      <version>2.3</version>
+		      <executions>
+		        <execution>
+		          <phase>package</phase>
+		          <goals><goal>copy</goal></goals>
+		          <configuration>
+		            <artifactItems>
+		              <artifactItem>
+		                <groupId>org.eclipse.jetty</groupId>
+		                <artifactId>jetty-runner</artifactId>
+		                <version>9.3.3.v20150827</version>
+		                <destFileName>jetty-runner.jar</destFileName>
+		              </artifactItem>
+		            </artifactItems>
+		          </configuration>
+		        </execution>
+		       </executions>
+		    </plugin>
 		</plugins>
 	</build>
 
