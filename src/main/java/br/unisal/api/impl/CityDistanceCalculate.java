@@ -3,11 +3,6 @@ package br.unisal.api.impl;
 import br.unisal.api.interfaces.DistanceCalculate;
 import br.unisal.api.model.City;
 
-/**
- * 
- * @author JETHER ROIS
- *
- */
 public class CityDistanceCalculate implements DistanceCalculate{
 
 	public double calculateDistanceInKilometers(City from, City to) {
