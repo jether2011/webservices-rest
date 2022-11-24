@@ -7,7 +7,7 @@
 
 	<properties>
 		<spring.version>4.1.6.RELEASE</spring.version>
-		<hibernate.version>4.3.10.Final</hibernate.version>
+		<hibernate.version>5.3.20.Final</hibernate.version>
 		<jersey.version>2.18</jersey.version>
 		<postgres.version>9.1-901.jdbc4</postgres.version>
 		<jersey.oauth.version>2.19</jersey.oauth.version>
