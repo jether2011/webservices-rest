@@ -6,7 +6,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 
 	<properties>
-		<spring.version>4.1.6.RELEASE</spring.version>
+		<spring.version>6.0.0</spring.version>
 		<hibernate.version>4.3.10.Final</hibernate.version>
 		<jersey.version>2.18</jersey.version>
 		<postgres.version>9.1-901.jdbc4</postgres.version>
